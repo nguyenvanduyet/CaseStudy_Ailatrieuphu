@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Ai Là triệu phú</title>
-
 </head>
 <style>
-    #khung{
+    #khung {
         border: 1px solid red;
-        height: 800px;
-        width: 1000px;
+        height: 700px;
+        width: 900px;
     }
 </style>
 
 
 <body>
-<link rel="stylesheet" href="anhnen.jpg">
-<div id="khung"><img src="anhnen.jpg">
-    <div id="cauhoi" style="text-align: center">
-        CÂU HỎI
-    </div>
-    <div style="text-align: center">
-        <button id="traloi_1" style="margin: 30px">câu trả lời 1</button>
-        <button id="traloi_2" style="margin: 30px">câu trả lời 2</button>
-        <br>
-        <button id="traloi_3" style="margin: 30px">câu trả lời 3</button>
-        <button id="traloi_4" style="margin: 30px">câu trả lời 4</button>
+<div id="khung"><img src="anhnen.jpg" width="900px" height="400px">
+    <div>
+        <div id="cauhoi" style="text-align: center"></div>
+        <center>
+            <button onclick="chooseAnswer(this.id)" id="traloi_1" style="margin: 30px">câu trả lời 1</button>
+            <button onclick="chooseAnswer(this.id)" id="traloi_2" style="margin: 30px">câu trả lời 2</button>
+        </center>
+        <center>
+            <button onclick="chooseAnswer(this.id)" id="traloi_3" style="margin: 30px">câu trả lời 3</button>
+            <button onclick="chooseAnswer(this.id)" id="traloi_4" style="margin: 30px">câu trả lời 4</button>
+        </center>
     </div>
 </div>
-<button id="next">NEXT</button>
-<button id="reset">RESET</button>
-</body>
+<button onclick="nextCh()" id="next">NEXT</button>
 <script src="MY.js"></script>
+
+
+
+</body>
+
 </html>
