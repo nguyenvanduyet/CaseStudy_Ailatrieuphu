@@ -28,10 +28,7 @@ class Quanly {
         } else {
             alert("sai rồi")
         }
-
-
     }
-
     nextCH() {
         if (this.CHhientai < this.soluong) {
             this.CHhientai++;
@@ -44,7 +41,9 @@ class Quanly {
     lose() {
         alert("ban đã thua cuộc");
         this.nextCH()
-
+    }
+    endGame(){
+        this.CHhientai=0;
     }
 
     addCh(question) {
@@ -89,6 +88,9 @@ function lose() {
     Hienthi(QL.CHhientai);
 
 }
+function endGame(){
+    QL.endGame(QL.CHhientai)
+}
 
 function chooseAnswer(id) {
     let Answer = document.getElementById(id).innerHTML;
@@ -96,10 +98,10 @@ function chooseAnswer(id) {
     if (QL.checkAnswer(Answer)) {
         nextCh();
     } else {
-        lose();
-
+        endGame();
     }
 }
+
 
 Hienthi(0);
 
