@@ -19,14 +19,12 @@ class Quanly {
         } else {
             return false;
         }
-
     }
-
     chooseAnswer(answer) {
         if (this.checkAnswer(answer)) {
             alert("chính xác")
         } else {
-            alert("sai rồi")
+            alert("sai rồi");
         }
     }
     nextCH() {
@@ -66,7 +64,6 @@ function Hienthi(index) {
     document.getElementById("traloi_3").innerHTML = QL.questinons[index].answer[2];
     document.getElementById("traloi_4").innerHTML = QL.questinons[index].answer[3];
 }
-
 function nextCh() {
     QL.nextCH();
     Hienthi(QL.CHhientai);
@@ -74,7 +71,6 @@ function nextCh() {
 function endGame(){
     QL.endGame(QL.CHhientai)
 }
-
 function chooseAnswer(id) {
     let Answer = document.getElementById(id).innerHTML;
     QL.chooseAnswer(Answer);
