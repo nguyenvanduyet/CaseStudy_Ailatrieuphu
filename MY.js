@@ -37,19 +37,12 @@ class Quanly {
             this.CHhientai = 0
         }
     }
-
-    lose() {
-        alert("ban đã thua cuộc");
-        this.nextCH()
-    }
     endGame(){
         this.CHhientai=0;
     }
-
     addCh(question) {
         this.questinons.push(question);
     }
-
 }
 
 let question1 = new Question("Câu hỏi 1: ai là người béo nhất lớp C1020G2 ?", ["A. Hoàn", "B. Hiếu", "C. Mừng", "D. Dũng"], "A. Hoàn");
@@ -73,20 +66,10 @@ function Hienthi(index) {
     document.getElementById("traloi_3").innerHTML = QL.questinons[index].answer[2];
     document.getElementById("traloi_4").innerHTML = QL.questinons[index].answer[3];
 }
-function time() {
-    timeCount = 15;
-
-}
 
 function nextCh() {
     QL.nextCH();
     Hienthi(QL.CHhientai);
-}
-
-function lose() {
-    QL.lose();
-    Hienthi(QL.CHhientai);
-
 }
 function endGame(){
     QL.endGame(QL.CHhientai)
@@ -101,8 +84,6 @@ function chooseAnswer(id) {
         endGame();
     }
 }
-
-
 Hienthi(0);
 
 
