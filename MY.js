@@ -24,7 +24,7 @@ class Quanly {
         if (this.checkAnswer(answer)) {
             alert("chính xác")
         } else {
-            alert("sai rồi");
+            alert("Gà quá");
         }
     }
     nextCH() {

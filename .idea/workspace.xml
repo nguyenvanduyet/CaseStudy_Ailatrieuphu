@@ -4,7 +4,6 @@
     <list default="true" id="03ac78f9-37ff-44b4-8d0c-4031131dc0b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MY.js" beforeDir="false" afterPath="$PROJECT_DIR$/MY.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/AiLaTrieuPhu-VA_43vp2.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +81,7 @@
       <workItem from="1607045036297" duration="1709000" />
       <workItem from="1607046876123" duration="149000" />
       <workItem from="1607047072677" duration="197000" />
+      <workItem from="1607049575747" duration="617000" />
     </task>
     <servers />
   </component>
