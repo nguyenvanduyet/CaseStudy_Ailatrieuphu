@@ -22,9 +22,9 @@ class Quanly {
     }
     chooseAnswer(answer) {
         if (this.checkAnswer(answer)) {
-            alert("chính xác")
+            alert("sắp đủ tiền uống bia rồi tiếp thôi")
         } else {
-            alert("Gà quá");
+            alert("Gà này thịt thôi");
         }
     }
     nextCH() {
